@@ -12,10 +12,12 @@ import { NavigationBar } from './NavigationBar'
 //import logo from './logo.svg';
 //import './App.css';
 
+
 class App extends Component {
   constructor(){
     super();
     this.state ={
+      moddata:'',
       response: false,
       endpoint: "http://localhost:4001"
     };
@@ -29,6 +31,7 @@ class App extends Component {
 
   render(){
     const { response } = this.state;
+    const { output } = this.state;
     return (
       <React.Fragment>
         <NavigationBar/>
